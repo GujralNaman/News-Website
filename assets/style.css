@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;500;600;700&family=Newsreader:ital,wght@0,400;0,500;0,700;1,800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    box-sizing: border-box;    
+}
+
+body,html{
+    font-family: 'Josefin Sans', sans-serif;
+    font-family: 'Newsreader', serif;
+    /* background-color: rgb(229, 230, 231) !important; */
+}
+
+.navbar-brand{
+    font-size: 33px;
+    font-weight: bold;
+    color: rgb(91, 62, 118) !important;
+}
+
+.nav-item .active{
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+main{
+    padding-bottom: 20px;
+    margin-top: 45px;
+}
+
+.cards-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 20px;
+    align-items: start;
+}
+
+.card {
+    width: 360px;
+    max-height: 450px;
+    box-shadow: 0 0 4px #d4ecff;
+    border-radius: 4px;
+    cursor: pointer;
+    background-color: #fff;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 1px 1px 8px #d4ecff;
+    background-color: #f9fdff;
+    transform: translateY(-2px);
+}
+
+.card-header img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 12px;
+}
+
+.news-source {
+    margin-block: 12px;
+}
